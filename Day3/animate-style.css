@@ -1,0 +1,64 @@
+body {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.wrapper {
+  width: 600px;
+  margin: auto;
+  font-family: Helvetica;
+}
+
+.top-content {
+  margin-top: 200px;
+  padding-bottom: 30px;
+}
+
+.main-header {
+  font-size: 72px;
+  color: SkyBlue;
+  margin-bottom: 20px;
+}
+
+.sub-header {
+  font-size: 20px;
+  color: grey;
+  margin-bottom: 30px;
+}
+
+.buttons {
+  text-align: center;
+  border-bottom: 1pt solid black;
+  padding-bottom: 20px;
+}
+
+.dropdown {
+  display: inline-block;
+  width: 30%;
+  padding-right: 10px;
+  margin-right: 10px;
+  font-size: 15px;
+}
+
+.button {
+  display: inline-block;
+  font-size: 18px;
+  border: 1pt solid SkyBlue;
+  border-radius: 2px;
+  padding: 5px;
+  color: SkyBlue;
+}
+
+.download {
+  margin-bottom: 15px;
+  font-size: 17px;
+}
+
+.byline {
+
+}
+
+.span {
+
+}

@@ -11,7 +11,9 @@
 .bigBox > div {
   margin: 2%;
   background: cornflowerblue;
+
   padding: 5%;
   display: inline-block;
   width: 40%;
 }
+
