@@ -1,0 +1,79 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(TitilliumText22L001.otf);
+    font-weight: bold;
+}
+
+html {
+  height: 100%; 
+}
+
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+}
+
+.custom-nav {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.title-image img {
+	position: absolute;
+  width: 100%;
+  height: auto;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 1;
+}
+
+.welcome-message {
+  position: relative;
+  padding: 1%;
+  color: white;
+  width: 70%;
+  margin: auto;
+
+  border: .5px solid black;
+  text-align: center;
+}
+
+.welcome {
+  font-size: 400px;
+  font-family: myFirstFont;
+  color: black;
+}
+
+.come-in {
+  font-size: 100px;
+  font-family: myFirstFont;
+  color: black;
+  background-color: transparent;
+  border: 6pt solid SlateGray;
+  padding: 1.5%;
+}
+
+.start-nav {
+  background-color: white;
+  height: 10%;
+  width: 100%;
+  position: relative;
+  top: 25%;
+  opacity: .6;
+}
+
+.fill-bar {
+  background-color: SlateGray;
+  height: 30%;
+  width: 100%;
+  position: relative;
+  top: 32%;
+}
+

@@ -1,0 +1,49 @@
+body {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-family: Helvetica;
+}
+
+.header {
+  text-align: center;
+  padding-top: 300px;
+  font-size: 72px;
+  color: SkyBlue;
+  margin-bottom: 20px;
+}
+
+.subhead {
+  font-size: 20px;
+  color: grey;
+  margin-bottom: 30px;
+}
+
+.buttons {
+  display: inline-block;
+  border-bottom: 1px solid gray;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+.drop {
+  width: 200px;
+  background-color: white;
+  color: SkyBlue;
+  display: inline-block; 
+}
+
+.divider {
+  text-align: left;
+  display: inline-block;
+}
+
+.dropbox {
+  text-align: right;
+  padding-bottom: 10px;
+  display: inline-block; 
+}
+
+.topfoot {
+  padding-bottom: 15px;
+}
