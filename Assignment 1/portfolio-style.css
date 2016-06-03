@@ -44,14 +44,6 @@ body {
   margin-top: 30px;
 }
 
-@media(max-width:1000px) {
-  .title-message {
-    padding: 2px;
-    margin: 10%;
-    font-size: 12px; 
-  }
-}
-
 .custom-nav {
   opacity: .75;
   margin-top: 33%;
@@ -59,7 +51,7 @@ body {
 }
 
 .nav-text {
-  margin-left: 1050px;
+  margin-left: 70%;
 }
 
 .quote {
@@ -102,7 +94,6 @@ body {
   text-align: center;
   font-size: 200%;
   padding-bottom: 2%;
-  color:;
 }
 
 .top-block {
@@ -135,4 +126,22 @@ body {
   background-color: #6F7982;
   color: white;
   padding: 8px;
+}
+
+@media(max-width:1000px) {
+  .title-message {
+    padding: 2px;
+    margin: 10%;
+    font-size: 12px; 
+  }
+  
+  .nav-text {
+    margin-left: 10%;
+    text-align: center;
+  }
+
+  .custom-nav, .welcome-nav, .connect-nav {
+  margin-top: 36%;
+  margin-bottom: 0%;
+  }
 }
