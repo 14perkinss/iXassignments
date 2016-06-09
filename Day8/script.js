@@ -7,7 +7,6 @@ $(document).ready(function() {
 	});
 
 	$("#list-item").click(function() {
-		console.log("hello");
 		removeItem(this);
 	});
 
