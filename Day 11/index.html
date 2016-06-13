@@ -9,7 +9,9 @@
   <input type="text" ng-model="myText">
   <p>You typed: {{myText}} </p>
   <br>
-  <button ng-click="count = count - 1" ng-model="myButton"> Decrement </button>
-  <p ng-show="count"> You clicked {{count}} times. <p>
+  <button ng-init="count = 10" ng-click="count = count - 1; other = other + 1" ng-model="myButton"> Decrement </button>
+  <p ng-show="other"> You clicked {{count}} times. </p>
+  <br>
+  <p ng-show="other"> You clicked {{other}} times </p>
 </body>
 </html>
