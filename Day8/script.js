@@ -6,8 +6,8 @@ $(document).ready(function() {
 		}
 	});
 
-	$("#list-item").click(function() {
-		removeItem(this);
+	$("#list-item").click(function(e) {
+		removeItem(e);
 	});
 
 

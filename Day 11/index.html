@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Decrement</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+</head>
+<body ng-app>
+  <input type="text" ng-model="myText">
+  <p>You typed: {{myText}} </p>
+  <br>
+  <button ng-click="count = count - 1" ng-model="myButton"> Decrement </button>
+  <p ng-show="count"> You clicked {{count}} times. <p>
+</body>
+</html>
