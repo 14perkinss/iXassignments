@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Book</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+  <script src="./contact_book_script.js"></script>
+</head>
+<body ng-app="FormApp" ng-controller="FormCtrl">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <div class="disappear" ng-hide="mySwitch">
+          <form>
+            <p>Name</p>
+            <input type="text" class="form-control" ng-model="name">
+            <p>Phone Number (XXX-XXX-XXXX)</p>
+            <input type="text" class="form-control" ng-model="phone">
+          </form>
+          <button ng-click="checkInputs()">Submit</button>
+        </div>
+        <div class="message">{{response}}
+          <br> {{nameError}}
+          <br> {{phoneError}}
+        </div>
+        <br>Search Contacts:
+        <input type="text" class="form-control" ng-model="search">
+        <ol>
+          <br>
+          <li ng-repeat="person in people | filter:search"> {{searchContacts(person)}} </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
