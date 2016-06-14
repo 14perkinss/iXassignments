@@ -9,7 +9,7 @@ app.controller("FormCtrl", function($scope) {
   $scope.password = "";
   $scope.password2 = "";
   $scope.mySwitch = false;
-
+  $scope.inputType = "password";
   //Check the inputs
   $scope.checkInputs = function() {
 
@@ -50,6 +50,12 @@ app.controller("FormCtrl", function($scope) {
     }
   }
 
+  $scope.showHidePass = function() {
+  if ($scope.inputType == 'password')
+    $scope.inputType = 'text';
+  else
+    $scope.inputType = 'password';
+  }
 });
 
 

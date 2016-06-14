@@ -24,9 +24,12 @@
             <p>Email (me@gmail.com)</p> 
             <input type="text" class="form-control" ng-model="email">
             <p>Password (must be at least 6 characters)</p> 
-            <input type="password" class="form-control" ng-model="password">
+            <div> Show Password
+              <input type="checkbox" val=""ng-click="showHidePass()">
+            </div>
+            <input type="{{inputType}}" class="form-control" ng-model="password">
             <p>Confirm Password</p>
-            <input type="password" class="form-control" ng-model="password2">
+            <input type="{{inputType}}" class="form-control" ng-model="password2">
           </form>
           <button ng-click="checkInputs()">Submit</button>
         </div>
