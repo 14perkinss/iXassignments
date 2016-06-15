@@ -1,0 +1,21 @@
+<div ng-controller="ContactCtrl">
+  <div class="disappear" ng-hide="mySwitch">
+    <form>
+      <p>Name</p>
+      <input type="text" class="form-control" ng-model="name">
+      <p>Phone Number (XXX-XXX-XXXX)</p>
+      <input type="text" class="form-control" ng-model="phone">
+    </form>
+    <button ng-click="checkInputs()">Submit</button>
+  </div>
+  <div class="message">{{response}}
+    <br> {{nameError}}
+    <br> {{phoneError}}
+  </div>
+  <br>Search Contacts:
+  <input type="text" class="form-control" ng-model="search">
+  <ol>
+    <br>
+    <li ng-repeat="person in people | filter:search"> {{searchContacts(person)}} </li>
+  </ol>
+</div>
